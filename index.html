@@ -3,227 +3,397 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ezerkoesz Ventures — Digital Products</title>
-  <meta name="description" content="We build apps, SaaS tools, and AI-powered templates that solve real problems for knowledge workers, project managers, and engineers." />
+  <title>Ezerkoesz Ventures</title>
+  <meta name="description" content="Digital tools built from validated, real-world problems. Bergen, Norway." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Suisse+Intl:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black: #0c0c0c;
-      --white: #f5f4f0;
-      --off:   #a0a090;
-      --line:  rgba(245,244,240,0.12);
-      --serif: 'EB Garamond', Georgia, serif;
-      --sans:  'DM Sans', sans-serif;
+      --ink:    #0d0d0d;
+      --paper:  #f2efe8;
+      --warm:   #e8e3d8;
+      --muted:  #8c8880;
+      --accent: #1a1a1a;
+      --serif:  'Cormorant', Georgia, serif;
+      --sans:   'DM Sans', Helvetica, sans-serif;
+      --rule:   rgba(13,13,13,0.12);
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--black);
-      color: var(--white);
+      background: var(--paper);
+      color: var(--ink);
       font-family: var(--sans);
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.6;
       overflow-x: hidden;
     }
 
-    /* NAV */
+    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1.4rem 2.5rem;
+      padding: 1.6rem 3rem;
+      mix-blend-mode: multiply;
     }
     .nav-logo {
       font-family: var(--sans); font-weight: 300;
-      font-size: 0.95rem; letter-spacing: 0.04em;
-      color: var(--white); text-decoration: none;
+      font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--ink); text-decoration: none;
     }
-    .nav-contact {
+    .nav-links {
+      display: flex; gap: 2.5rem; list-style: none;
+    }
+    .nav-links a {
       font-family: var(--sans); font-weight: 300;
-      font-size: 0.95rem; letter-spacing: 0.04em;
-      color: var(--white); text-decoration: none;
-      display: flex; align-items: center; gap: 0.75rem;
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink); text-decoration: none; opacity: 0.6;
+      transition: opacity 0.2s;
     }
-    .nav-lines { width: 22px; height: 14px; display: flex; flex-direction: column; justify-content: space-between; }
-    .nav-lines span { display: block; height: 1px; background: var(--white); }
+    .nav-links a:hover { opacity: 1; }
 
-    /* HERO */
+    /* ── HERO ── */
     #hero {
       min-height: 100vh;
-      display: flex; flex-direction: column;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: 0 3rem;
+      background: var(--paper);
+      position: relative;
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
       justify-content: flex-end;
-      padding: 0 2.5rem 4rem;
+      padding-bottom: 5rem;
+    }
+    .hero-eyebrow {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 2rem;
+      opacity: 0; animation: rise 1s 0.2s forwards;
     }
     .hero-headline {
-      font-family: var(--serif); font-weight: 400;
-      font-size: clamp(3.2rem, 6.5vw, 7rem);
-      line-height: 1.08; letter-spacing: -0.01em;
-      max-width: 18ch;
-      opacity: 0; animation: fadeIn 1.2s 0.3s forwards;
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(4rem, 8vw, 9.5rem);
+      line-height: 0.95; letter-spacing: -0.02em;
+      color: var(--ink);
+      max-width: 14ch;
+      opacity: 0; animation: rise 1.2s 0.4s forwards;
     }
-    .hero-meta {
-      margin-top: 2.5rem;
-      display: flex; align-items: flex-end;
-      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-      border-top: 1px solid var(--line); padding-top: 1.5rem;
-      opacity: 0; animation: fadeIn 1s 0.8s forwards;
+    .hero-headline em {
+      font-style: italic; font-weight: 300;
     }
-    .hero-desc { font-weight: 300; font-size: 0.9rem; color: var(--off); max-width: 40ch; line-height: 1.7; }
-    .hero-scroll { font-size: 0.75rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: var(--off); }
+    .hero-footer {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding: 1.8rem 0;
+      border-top: 1px solid var(--rule);
+      opacity: 0; animation: rise 1s 0.9s forwards;
+    }
+    .hero-desc {
+      font-weight: 300; font-size: 0.85rem;
+      color: var(--muted); max-width: 38ch; line-height: 1.8;
+    }
+    .hero-index {
+      font-family: var(--serif); font-style: italic;
+      font-size: 0.8rem; color: var(--muted);
+    }
 
-    /* IMAGE GRID */
-    #grid {
+    /* ── MARQUEE ── */
+    .marquee-wrap {
+      overflow: hidden;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 1.1rem 0;
+      background: var(--ink);
+    }
+    .marquee-track {
+      display: flex; gap: 4rem;
+      white-space: nowrap;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-track span {
+      font-family: var(--serif); font-style: italic;
+      font-size: 1.05rem; font-weight: 300;
+      color: var(--paper); opacity: 0.55;
+      flex-shrink: 0;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── INTRO TEXT ── */
+    #intro {
+      padding: 9rem 3rem;
       display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 55vh 40vh;
-      gap: 3px; padding: 3px;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+      border-bottom: 1px solid var(--rule);
     }
-    .grid-cell { background: #141414; position: relative; overflow: hidden; }
-    .cell-b { background: #0f0f0f; grid-column: 2; grid-row: 1 / 3; }
-    .cell-c { background: #161616; grid-column: 3; grid-row: 1; }
-    .cell-d { background: #111; grid-column: 1; grid-row: 2; }
-    .cell-e { background: #151515; grid-column: 3; grid-row: 2; }
-    .cell-inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-    .geo { opacity: 0.055; }
-    .grid-cell-content {
-      position: absolute; inset: 0;
-      display: flex; flex-direction: column; justify-content: flex-end;
-      padding: 1.75rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
-      opacity: 0; transition: opacity 0.35s;
+    .intro-label {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted); padding-top: 0.5rem;
     }
-    .grid-cell:hover .grid-cell-content { opacity: 1; }
-    .grid-cell-label { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--off); margin-bottom: 0.3rem; }
-    .grid-cell-title { font-family: var(--serif); font-weight: 400; font-size: 1.2rem; line-height: 1.3; }
+    .intro-body {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(1.6rem, 2.8vw, 2.6rem);
+      line-height: 1.35; letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .intro-body em { font-style: italic; }
 
-    /* SECTIONS */
-    .section { padding: 8rem 2.5rem; border-top: 1px solid var(--line); }
-    .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 5rem; }
-    .section-num { font-family: var(--serif); font-style: italic; font-size: 0.85rem; color: var(--off); }
-    .section-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 4vw, 3.8rem); letter-spacing: -0.01em; line-height: 1.1; }
-
-    /* PRODUCTS — dynamisk seksjon */
-    #products-section { padding: 8rem 2.5rem; border-top: 1px solid var(--line); }
-
+    /* ── PRODUCTS ── */
+    #products-section {
+      padding: 0 3rem 8rem;
+    }
+    .products-section-header {
+      display: flex; align-items: baseline; justify-content: space-between;
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 0;
+    }
+    .products-section-label {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted);
+    }
+    .products-section-count {
+      font-family: var(--serif); font-style: italic;
+      font-size: 0.85rem; color: var(--muted);
+    }
     .products-empty {
       font-family: var(--serif); font-style: italic;
-      font-size: 1.2rem; color: var(--off);
-      padding: 4rem 0;
+      font-size: 1.4rem; color: var(--muted);
+      padding: 5rem 0;
     }
-
     .product-list { display: flex; flex-direction: column; }
-
     .product-item {
       display: grid;
-      grid-template-columns: 80px 1fr 1fr auto;
-      gap: 2rem;
-      padding: 2.5rem 0;
-      border-bottom: 1px solid var(--line);
-      color: var(--white);
-      transition: opacity 0.2s;
+      grid-template-columns: 3rem 1fr 1fr auto;
+      gap: 2.5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--rule);
       align-items: start;
+      transition: background 0.3s;
+      cursor: default;
     }
-    .product-item:hover { opacity: 0.6; }
-
-    .product-num { font-family: var(--serif); font-style: italic; font-size: 0.85rem; color: var(--off); padding-top: 0.3rem; }
-
-    .product-info {}
-    .product-name { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
-    .product-tagline { font-weight: 300; font-size: 0.88rem; color: var(--off); line-height: 1.6; }
-
-    .product-detail { font-weight: 300; font-size: 0.85rem; color: var(--off); line-height: 1.7; max-width: 36ch; }
-
-    .product-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.75rem; }
-    .product-price { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; }
-    .product-type-tag { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--off); }
-    .product-buy {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-family: var(--sans); font-weight: 400; font-size: 0.78rem;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--white); text-decoration: none;
-      border-bottom: 1px solid rgba(245,244,240,0.3);
-      padding-bottom: 2px;
-      transition: border-color 0.2s;
-      margin-top: 0.5rem;
-    }
-    .product-buy:hover { border-color: var(--white); }
-
-    .product-image {
-      grid-column: 1 / -1;
-      margin-top: 1.5rem;
-      height: 200px;
-      background: #141414;
-      border-radius: 2px;
-      overflow: hidden;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .product-image img { width: 100%; height: 100%; object-fit: cover; }
-    .product-image-placeholder {
+    .product-item:hover { background: rgba(13,13,13,0.025); }
+    .product-num {
       font-family: var(--serif); font-style: italic;
-      font-size: 0.85rem; color: var(--off);
+      font-size: 0.8rem; color: var(--muted); padding-top: 0.4rem;
+    }
+    .product-name {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(1.4rem, 2vw, 2rem);
+      line-height: 1.15; letter-spacing: -0.01em;
+      margin-bottom: 0.6rem;
+    }
+    .product-tagline {
+      font-weight: 300; font-size: 0.82rem;
+      color: var(--muted); line-height: 1.7;
+    }
+    .product-detail {
+      font-weight: 300; font-size: 0.82rem;
+      color: var(--muted); line-height: 1.8;
+      max-width: 34ch; padding-top: 0.3rem;
+    }
+    .product-meta {
+      display: flex; flex-direction: column;
+      align-items: flex-end; gap: 0.6rem;
+      padding-top: 0.3rem;
+    }
+    .product-price {
+      font-family: var(--serif); font-weight: 300;
+      font-size: 1.5rem; letter-spacing: -0.01em;
+    }
+    .product-type-tag {
+      font-size: 0.65rem; font-weight: 300;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+    }
+    .product-buy {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-family: var(--sans); font-weight: 300; font-size: 0.72rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink); text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px; margin-top: 0.4rem;
+      transition: border-color 0.2s, opacity 0.2s;
+    }
+    .product-buy:hover { border-color: var(--ink); opacity: 0.7; }
+
+    /* ── PROCESS ── */
+    #process {
+      padding: 9rem 3rem;
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .process-header {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 6rem;
+      border-bottom: 1px solid rgba(242,239,232,0.1);
+      padding-bottom: 2rem;
+    }
+    .process-label {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: rgba(242,239,232,0.4);
+    }
+    .process-headline {
+      font-family: var(--serif); font-weight: 300; font-style: italic;
+      font-size: clamp(1.8rem, 3vw, 3rem); letter-spacing: -0.01em;
+      color: var(--paper);
+    }
+    .process-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-left: 1px solid rgba(242,239,232,0.1);
+    }
+    .process-step {
+      padding: 0 2rem 0 2rem;
+      border-right: 1px solid rgba(242,239,232,0.1);
+    }
+    .process-n {
+      display: block;
+      font-family: var(--serif); font-style: italic;
+      font-size: 0.75rem; color: rgba(242,239,232,0.3);
+      margin-bottom: 2.5rem;
+    }
+    .process-step h3 {
+      font-family: var(--serif); font-weight: 300;
+      font-size: 1.6rem; letter-spacing: -0.01em;
+      color: var(--paper); margin-bottom: 1.2rem; line-height: 1.1;
+    }
+    .process-step p {
+      font-weight: 300; font-size: 0.82rem;
+      color: rgba(242,239,232,0.5); line-height: 1.8;
     }
 
-    /* PROCESS */
-    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .process-step { padding: 2.5rem 2rem 2.5rem 0; border-right: 1px solid var(--line); }
-    .process-step:last-child { border-right: none; }
-    .process-n { font-family: var(--serif); font-style: italic; font-size: 0.8rem; color: var(--off); margin-bottom: 2rem; display: block; }
-    .process-step h3 { font-family: var(--serif); font-weight: 400; font-size: 1.4rem; letter-spacing: -0.01em; margin-bottom: 1rem; }
-    .process-step p { font-weight: 300; font-size: 0.85rem; color: var(--off); line-height: 1.7; }
+    /* ── ABOUT ── */
+    #about {
+      padding: 9rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .about-left {}
+    .about-label {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 3rem;
+    }
+    .about-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2rem, 3vw, 3rem); letter-spacing: -0.01em;
+      line-height: 1.2; margin-bottom: 2.5rem;
+    }
+    .about-body {
+      font-weight: 300; font-size: 0.85rem;
+      color: var(--muted); line-height: 1.9;
+    }
+    .about-body p { margin-bottom: 1.2rem; }
+    .about-body strong { color: var(--ink); font-weight: 400; }
+    .about-right {}
+    .about-facts { margin-top: 4.5rem; }
+    .about-fact {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 1.1rem 0; border-bottom: 1px solid var(--rule);
+      font-size: 0.82rem;
+    }
+    .fact-label { color: var(--muted); font-weight: 300; }
+    .fact-val {
+      font-family: var(--serif); font-style: italic;
+      font-size: 0.95rem; color: var(--ink);
+    }
+    .about-statement {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(1.5rem, 2.2vw, 2rem);
+      line-height: 1.45; letter-spacing: -0.01em;
+      color: var(--ink); padding-top: 0;
+    }
+    .about-statement em { font-style: italic; }
 
-    /* ABOUT */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
-    #about h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 3.5vw, 3.2rem); letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 2rem; }
-    #about p { font-weight: 300; color: var(--off); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.25rem; }
-    #about p strong { color: var(--white); font-weight: 400; }
-    .about-facts { margin-top: 3rem; }
-    .about-fact { display: flex; justify-content: space-between; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--line); font-size: 0.85rem; }
-    .fact-label { color: var(--off); font-weight: 300; }
-    .fact-val { font-family: var(--serif); font-style: italic; font-size: 1rem; }
-    .about-statement { font-family: var(--serif); font-weight: 400; font-size: clamp(1.5rem, 2.5vw, 2.2rem); line-height: 1.4; letter-spacing: -0.01em; padding-top: 1rem; border-top: 1px solid var(--line); }
-
-    /* CONTACT */
-    #contact { padding: 8rem 2.5rem 10rem; border-top: 1px solid var(--line); }
-    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: end; }
-    .contact-headline { font-family: var(--serif); font-weight: 400; font-size: clamp(2.5rem, 5vw, 5rem); letter-spacing: -0.02em; line-height: 1.05; }
+    /* ── CONTACT ── */
+    #contact {
+      padding: 9rem 3rem 10rem;
+      background: var(--warm);
+    }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8rem; align-items: end;
+    }
+    .contact-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(3rem, 6vw, 6.5rem);
+      letter-spacing: -0.02em; line-height: 0.95;
+      color: var(--ink);
+    }
+    .contact-headline em { font-style: italic; }
     .contact-links { display: flex; flex-direction: column; }
-    .contact-link { display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--white); font-family: var(--serif); font-weight: 400; font-size: 1.2rem; transition: opacity 0.2s; }
-    .contact-link:hover { opacity: 0.5; }
-    .contact-arrow { display: inline-block; transform: rotate(-45deg); transition: transform 0.2s; }
-    .contact-link:hover .contact-arrow { transform: rotate(-45deg) translate(3px, -3px); }
+    .contact-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.6rem 0; border-bottom: 1px solid var(--rule);
+      text-decoration: none; color: var(--ink);
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .contact-link:hover { opacity: 0.45; }
+    .contact-arrow { font-size: 1.1rem; }
 
-    /* FOOTER */
-    footer { padding: 1.5rem 2.5rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    footer p { font-size: 0.78rem; font-weight: 300; color: var(--off); }
+    /* ── FOOTER ── */
+    footer {
+      padding: 1.8rem 3rem;
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    footer p {
+      font-size: 0.72rem; font-weight: 300;
+      letter-spacing: 0.06em; color: var(--muted);
+    }
+    .footer-legal {
+      display: flex; gap: 2rem;
+    }
+    .footer-legal a {
+      font-size: 0.72rem; font-weight: 300;
+      letter-spacing: 0.06em; color: var(--muted);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: var(--ink); }
 
-    /* ANIMATIONS */
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s, transform 0.9s; }
+    /* ── ANIMATIONS ── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* RESPONSIVE */
+    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      #grid { grid-template-columns: 1fr 1fr; grid-template-rows: 40vh 40vh 35vh; }
-      .cell-b { grid-column: 1 / 3; grid-row: 1; }
-      .cell-a { grid-column: 1; grid-row: 2; }
-      .cell-c { grid-column: 2; grid-row: 2; }
-      .cell-d { grid-column: 1; grid-row: 3; }
-      .cell-e { grid-column: 2; grid-row: 3; }
-      .product-item { grid-template-columns: 50px 1fr; }
+      nav { padding: 1.4rem 1.6rem; }
+      #hero, #products-section, #process, #about, #contact, footer { padding-left: 1.6rem; padding-right: 1.6rem; }
+      #intro { grid-template-columns: 1fr; gap: 1.5rem; padding: 5rem 1.6rem; }
+      .product-item { grid-template-columns: 2.5rem 1fr; gap: 1.5rem; }
       .product-detail, .product-meta { grid-column: 2; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .process-step:nth-child(2) { border-right: none; }
-      .process-step:nth-child(3) { border-right: 1px solid var(--line); }
-      .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .process-step:nth-child(3) { border-right: 1px solid rgba(242,239,232,0.1); }
+      #about, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
     }
     @media (max-width: 600px) {
-      .process-grid { grid-template-columns: 1fr; }
-      .process-step { border-right: none; border-bottom: 1px solid var(--line); }
-      .process-step:last-child { border-bottom: none; }
+      .nav-links { display: none; }
+      .hero-headline { font-size: 3.5rem; }
+      .process-grid { grid-template-columns: 1fr; border-left: none; }
+      .process-step { border-right: none; border-bottom: 1px solid rgba(242,239,232,0.1); padding: 2rem 0; }
     }
   </style>
 </head>
@@ -231,105 +401,80 @@
 
   <nav>
     <a href="#" class="nav-logo">Ezerkoesz</a>
-    <a href="#contact" class="nav-contact">
-      Contact
-      <div class="nav-lines"><span></span><span></span></div>
-    </a>
+    <ul class="nav-links">
+      <li><a href="#products-section">Products</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
+  <!-- HERO -->
   <section id="hero">
-    <h1 class="hero-headline">We build tools that solve problems people actually have.</h1>
-    <div class="hero-meta">
-      <p class="hero-desc">AI-powered apps, SaaS tools, and knowledge templates — built from validated, recurring frustrations. Bergen, Norway.</p>
-      <span class="hero-scroll">Scroll</span>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bergen, Norway — Est. 2025</p>
+      <h1 class="hero-headline">Tools built from <em>real</em> problems.</h1>
+    </div>
+    <div class="hero-footer">
+      <p class="hero-desc">Digital products for knowledge workers, project managers, and engineers — built from validated, recurring frustrations.</p>
+      <span class="hero-index">Ezerkoesz Ventures AS</span>
     </div>
   </section>
 
-  <div id="grid">
-    <div class="grid-cell">
-      <div class="cell-inner">
-        <svg class="geo" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#f5f4f0" stroke-width="1"/>
-          <circle cx="100" cy="100" r="50" fill="none" stroke="#f5f4f0" stroke-width="0.5"/>
-          <line x1="20" y1="100" x2="180" y2="100" stroke="#f5f4f0" stroke-width="0.5"/>
-          <line x1="100" y1="20" x2="100" y2="180" stroke="#f5f4f0" stroke-width="0.5"/>
-        </svg>
-      </div>
-      <div class="grid-cell-content">
-        <span class="grid-cell-label">Templates</span>
-        <span class="grid-cell-title">Notion & Obsidian</span>
-      </div>
-    </div>
-    <div class="grid-cell cell-b">
-      <div class="cell-inner">
-        <svg class="geo" width="100%" height="100%" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice">
-          <rect x="60" y="60" width="280" height="480" fill="none" stroke="#f5f4f0" stroke-width="0.8"/>
-          <rect x="100" y="100" width="200" height="400" fill="none" stroke="#f5f4f0" stroke-width="0.4"/>
-          <line x1="60" y1="300" x2="340" y2="300" stroke="#f5f4f0" stroke-width="0.4"/>
-          <line x1="200" y1="60" x2="200" y2="540" stroke="#f5f4f0" stroke-width="0.4"/>
-          <circle cx="200" cy="300" r="60" fill="none" stroke="#f5f4f0" stroke-width="0.4"/>
-        </svg>
-      </div>
-      <div class="grid-cell-content">
-        <span class="grid-cell-label">Featured</span>
-        <span class="grid-cell-title">AI-powered tools for the work that matters</span>
-      </div>
-    </div>
-    <div class="grid-cell cell-c">
-      <div class="cell-inner">
-        <svg class="geo" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
-          <polygon points="100,20 180,160 20,160" fill="none" stroke="#f5f4f0" stroke-width="0.8"/>
-          <polygon points="100,50 155,150 45,150" fill="none" stroke="#f5f4f0" stroke-width="0.4"/>
-        </svg>
-      </div>
-      <div class="grid-cell-content">
-        <span class="grid-cell-label">SaaS</span>
-        <span class="grid-cell-title">Lightweight & Focused</span>
-      </div>
-    </div>
-    <div class="grid-cell cell-d">
-      <div class="cell-inner">
-        <svg class="geo" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
-          <rect x="30" y="30" width="140" height="140" fill="none" stroke="#f5f4f0" stroke-width="0.8" transform="rotate(15 100 100)"/>
-          <rect x="50" y="50" width="100" height="100" fill="none" stroke="#f5f4f0" stroke-width="0.4" transform="rotate(30 100 100)"/>
-          <rect x="70" y="70" width="60" height="60" fill="none" stroke="#f5f4f0" stroke-width="0.3" transform="rotate(45 100 100)"/>
-        </svg>
-      </div>
-      <div class="grid-cell-content">
-        <span class="grid-cell-label">Automation</span>
-        <span class="grid-cell-title">AI Pipelines</span>
-      </div>
-    </div>
-    <div class="grid-cell cell-e">
-      <div class="cell-inner">
-        <svg class="geo" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
-          <path d="M 100 20 Q 180 100 100 180 Q 20 100 100 20" fill="none" stroke="#f5f4f0" stroke-width="0.8"/>
-          <path d="M 40 100 Q 100 40 160 100 Q 100 160 40 100" fill="none" stroke="#f5f4f0" stroke-width="0.4"/>
-          <circle cx="100" cy="100" r="15" fill="none" stroke="#f5f4f0" stroke-width="0.4"/>
-        </svg>
-      </div>
-      <div class="grid-cell-content">
-        <span class="grid-cell-label">Bergen, NO</span>
-        <span class="grid-cell-title">Founded 2025</span>
-      </div>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Notion Templates</span>
+      <span>·</span>
+      <span>Obsidian Vaults</span>
+      <span>·</span>
+      <span>Spreadsheet Tools</span>
+      <span>·</span>
+      <span>AI-Powered Pipelines</span>
+      <span>·</span>
+      <span>SaaS Tools</span>
+      <span>·</span>
+      <span>Knowledge Systems</span>
+      <span>·</span>
+      <span>Notion Templates</span>
+      <span>·</span>
+      <span>Obsidian Vaults</span>
+      <span>·</span>
+      <span>Spreadsheet Tools</span>
+      <span>·</span>
+      <span>AI-Powered Pipelines</span>
+      <span>·</span>
+      <span>SaaS Tools</span>
+      <span>·</span>
+      <span>Knowledge Systems</span>
+      <span>·</span>
     </div>
   </div>
 
-  <!-- DYNAMISK PRODUKTSEKSJON -->
+  <!-- INTRO -->
+  <section id="intro">
+    <span class="intro-label reveal">Our approach</span>
+    <p class="intro-body reveal">
+      We scan communities for <em>expressed frustrations</em> — problems people already pay to solve. Then we build the minimum viable tool that removes the friction. No trends. No guesswork.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
   <section id="products-section">
-    <div class="section-header reveal">
-      <span class="section-num">01 — Products</span>
-      <h2 class="section-title" id="products-heading">Our products</h2>
+    <div class="products-section-header reveal">
+      <span class="products-section-label">Products</span>
+      <span class="products-section-count" id="products-heading"></span>
     </div>
-    <div id="products-container" class="reveal">
+    <div id="products-container">
       <p class="products-empty">Products launching soon.</p>
     </div>
   </section>
 
-  <section id="process" class="section">
-    <div class="section-header reveal">
-      <span class="section-num">02 — Process</span>
-      <h2 class="section-title">From pain point to product</h2>
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="process-header reveal">
+      <span class="process-label">How we work</span>
+      <h2 class="process-headline">From pain point to product</h2>
     </div>
     <div class="process-grid reveal">
       <div class="process-step">
@@ -355,52 +500,61 @@
     </div>
   </section>
 
-  <section id="about" class="section">
-    <div class="section-header reveal">
-      <span class="section-num">03 — About</span>
-    </div>
-    <div class="about-grid">
-      <div class="reveal">
-        <h2>Built by an engineer, for people in the trenches.</h2>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left reveal">
+      <p class="about-label">About</p>
+      <h2 class="about-headline">Built by an engineer, for people in the trenches.</h2>
+      <div class="about-body">
         <p>Ezerkoesz Ventures is a digital product studio run by <strong>Bengt Zseni-Clausen</strong> — a civil engineer with over 15 years in technical infrastructure and water management.</p>
         <p>Founded on a simple principle: <strong>the best products come from understanding the problem deeply, not from chasing trends.</strong></p>
         <p>We use AI to move fast and stay lean — so every product ships at a price that makes sense for the people who need it.</p>
-        <div class="about-facts">
-          <div class="about-fact"><span class="fact-label">Founded</span><span class="fact-val">Bergen, Norway — 2025</span></div>
-          <div class="about-fact"><span class="fact-label">Entity</span><span class="fact-val">Ezerkoesz Ventures AS</span></div>
-          <div class="about-fact"><span class="fact-label">Approach</span><span class="fact-val">Pain point-driven</span></div>
-          <div class="about-fact"><span class="fact-label">Development</span><span class="fact-val">AI-native</span></div>
-        </div>
       </div>
-      <div class="reveal">
-        <p class="about-statement">"The best products come from understanding the problem deeply — not from chasing trends or technologies."</p>
+      <div class="about-facts">
+        <div class="about-fact"><span class="fact-label">Founded</span><span class="fact-val">Bergen, Norway — 2025</span></div>
+        <div class="about-fact"><span class="fact-label">Entity</span><span class="fact-val">Ezerkoesz Ventures AS</span></div>
+        <div class="about-fact"><span class="fact-label">Approach</span><span class="fact-val">Pain point-driven</span></div>
+        <div class="about-fact"><span class="fact-label">Development</span><span class="fact-val">AI-native</span></div>
       </div>
+    </div>
+    <div class="about-right reveal">
+      <p class="about-statement">"The best products come from understanding the problem deeply — <em>not from chasing trends or technologies.</em>"</p>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
-    <div class="contact-inner">
-      <h2 class="contact-headline reveal">Got a problem worth solving?</h2>
+    <div class="contact-grid">
+      <h2 class="contact-headline reveal">Have a <em>problem</em> worth solving?</h2>
       <div class="contact-links reveal">
-        <a href="#products-section" class="contact-link">Browse products <span class="contact-arrow">→</span></a>
+        <a href="mailto:contact@ezerkoesz.com" class="contact-link">
+          Get in touch <span class="contact-arrow">↗</span>
+        </a>
+        <a href="#products-section" class="contact-link">
+          Browse products <span class="contact-arrow">↓</span>
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Ezerkoesz Ventures AS</p>
+    <p>© 2026 Ezerkoesz Ventures AS &nbsp;·&nbsp; Org.nr. 933 163 865</p>
     <p id="footer-updated"></p>
+    <div class="footer-legal">
+      <a href="/terms.html">Terms</a>
+      <a href="/privacy-policy.html">Privacy</a>
+      <a href="/refund-policy.html">Refund Policy</a>
+    </div>
   </footer>
 
   <script>
-    // Scroll reveal
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.1 }
+      { threshold: 0.08 }
     );
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Hent produkter fra products.json
     async function loadProducts() {
       try {
         const res = await fetch('./products.json?t=' + Date.now());
@@ -417,20 +571,20 @@
 
         if (products.length === 0) {
           container.innerHTML = '<p class="products-empty">Products launching soon.</p>';
+          heading.textContent = '';
           return;
         }
 
-        heading.textContent = products.length === 1 ? 'Our product' : 'Our products';
+        heading.textContent = products.length + (products.length === 1 ? ' product' : ' products');
 
         const list = document.createElement('div');
         list.className = 'product-list';
 
         products.forEach((p, i) => {
-          const num = String(i + 1).padStart(3, '0');
+          const num = String(i + 1).padStart(2, '0');
           const typeLabel = (p.product_type || 'digital product').replace('_', ' ');
-
           const item = document.createElement('div');
-          item.className = 'product-item';
+          item.className = 'product-item reveal';
           item.innerHTML = `
             <span class="product-num">${num}</span>
             <div class="product-info">
@@ -441,37 +595,25 @@
             <div class="product-meta">
               <span class="product-price">${p.price || ''}</span>
               <span class="product-type-tag">${typeLabel}</span>
-              ${p.buy_url ? `<a href="${p.buy_url}" class="product-buy" target="_blank" rel="noopener">Buy now →</a>` : ''}
+              ${p.buy_url ? `<a href="${p.buy_url}" class="product-buy" target="_blank" rel="noopener">Buy now ↗</a>` : ''}
               ${p.notion_url ? `<a href="${p.notion_url}" class="product-buy" target="_blank" rel="noopener">Free preview →</a>` : ''}
               ${p.gumroad_url ? `<a href="${p.gumroad_url}" class="product-buy" target="_blank" rel="noopener">Also on Gumroad →</a>` : ''}
             </div>
-            ${p.image_url ? `
-            <div class="product-image" style="grid-column: 1 / -1;">
-              <img src="${p.image_url}" alt="${p.name}" loading="lazy" />
-            </div>` : ''}
+            ${p.image_url ? `<div style="grid-column:1/-1;margin-top:1.5rem;height:220px;overflow:hidden;"><img src="${p.image_url}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/></div>` : ''}
           `;
           list.appendChild(item);
         });
 
         container.innerHTML = '';
         container.appendChild(list);
-        observer.observe(container);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
       } catch (err) {
-        console.error('Kunne ikke laste produkter:', err);
+        console.error('Could not load products:', err);
       }
     }
 
     loadProducts();
   </script>
-
-  <footer style="max-width:720px;margin:3rem auto;padding:2rem 0;border-top:1px solid #2a2a2a;text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:0.8rem;color:#7a7468;">
-    <p>© 2026 Ezerkoesz Ventures AS</p>
-    <p style="margin-top:0.5rem;">
-      <a href="/terms.html" style="color:#c9a84c;text-decoration:none;margin:0 1rem;">Terms of Service</a>
-      <a href="/privacy-policy.html" style="color:#c9a84c;text-decoration:none;margin:0 1rem;">Privacy Policy</a>
-      <a href="/refund-policy.html" style="color:#c9a84c;text-decoration:none;margin:0 1rem;">Refund Policy</a>
-    </p>
-  </footer>
 </body>
 </html>
