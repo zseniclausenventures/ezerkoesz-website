@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T15:46:17Z",
+  "updated_at": "2026-03-28T16:33:53Z",
   "products": [
     {
       "id": 14,
@@ -65,6 +65,19 @@
       "url": "",
       "score": 9.0,
       "built_at": "2026-03-28T15:42:44Z"
+    },
+    {
+      "id": 45,
+      "name": "AI ROI Compass",
+      "tagline": "Turn enterprise AI analytics into actionable optimization strategies.",
+      "description": "A Notion template with KPI tracking, ROI measurement frameworks, and improvement playbooks for enterprise AI teams who have data but no clear path to better results.",
+      "type": "notion_template",
+      "price": 29,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-03-28T16:40:00Z"
     }
   ]
 }
