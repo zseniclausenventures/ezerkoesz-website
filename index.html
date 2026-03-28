@@ -593,9 +593,9 @@
             </div>
             <div class="product-detail">${p.description || ''}</div>
             <div class="product-meta">
-              <span class="product-price">${p.price || ''}</span>
+              <span class="product-price">${p.price ? `$${p.price}` : ''}</span>
               <span class="product-type-tag">${typeLabel}</span>
-              ${p.buy_url ? `<a href="${p.buy_url}" class="product-buy" target="_blank" rel="noopener">Buy now ↗</a>` : ''}
+              ${(p.url || p.buy_url) ? `<a href="${p.url || p.buy_url}" class="product-buy" target="_blank" rel="noopener">Buy now ↗</a>` : (p.status === 'coming_soon' ? '<span class="product-buy" style="opacity:0.4;cursor:default;">Coming soon</span>' : '')}
               ${p.notion_url ? `<a href="${p.notion_url}" class="product-buy" target="_blank" rel="noopener">Free preview →</a>` : ''}
               ${p.gumroad_url ? `<a href="${p.gumroad_url}" class="product-buy" target="_blank" rel="noopener">Also on Gumroad →</a>` : ''}
             </div>
