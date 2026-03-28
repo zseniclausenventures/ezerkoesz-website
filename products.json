@@ -1,4 +1,70 @@
 {
-  "updated_at": "2026-03-21T00:00:00Z",
-  "products": []
+  "updated_at": "2026-03-28T15:46:17Z",
+  "products": [
+    {
+      "id": 14,
+      "name": "SaaS Discovery Toolkit",
+      "tagline": "Uncover SaaS customer pain points instantly.",
+      "description": "A comprehensive Notion template with interview scripts, persona builders, and pain-point analysis matrices tailored for SaaS discovery.",
+      "type": "notion_template",
+      "price": 19,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-03-28T10:05:08Z"
+    },
+    {
+      "id": 20,
+      "name": "ERP Cost Reality Check",
+      "tagline": "Know the true 5-year cost of your ERP before you sign.",
+      "description": "A dynamic spreadsheet that automatically calculates 5-year ERP TCO by factoring in hidden maintenance fees, implementation costs, and training overhead.",
+      "type": "spreadsheet",
+      "price": 19,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-03-28T09:49:08Z"
+    },
+    {
+      "id": 27,
+      "name": "PricingGap Calculator",
+      "tagline": "Find your optimal SaaS price point in minutes.",
+      "description": "A dynamic SaaS pricing benchmarking spreadsheet with pre-built formulas to visualize competitor gaps and calculate optimal price points.",
+      "type": "spreadsheet",
+      "price": 19,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-03-28T09:51:03Z"
+    },
+    {
+      "id": 33,
+      "name": "ProfitFirst Package Builder",
+      "tagline": "Build service packages that are profitable from day one.",
+      "description": "A dynamic Notion template that automates Profit First calculations to generate tiered service packages instantly.",
+      "type": "notion_template",
+      "price": 19,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-03-28T10:02:12Z"
+    },
+    {
+      "id": 46,
+      "name": "API Bridge Builder",
+      "tagline": "Migrate broken API integrations without starting from scratch.",
+      "description": "A migration toolkit with code examples, updated integration templates, and step-by-step workflows for Notion API 2026 breaking changes.",
+      "type": "notion_template",
+      "price": 29,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-03-28T15:42:44Z"
+    }
+  ]
 }
