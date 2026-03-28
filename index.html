@@ -182,7 +182,7 @@
       border-bottom: 1px solid var(--rule);
       align-items: start;
       transition: background 0.3s;
-      cursor: default;
+      cursor: pointer;
     }
     .product-item:hover { background: rgba(13,13,13,0.025); }
     .product-num {
@@ -583,8 +583,10 @@
         products.forEach((p, i) => {
           const num = String(i + 1).padStart(2, '0');
           const typeLabel = (p.product_type || 'digital product').replace('_', ' ');
-          const item = document.createElement('div');
+          const item = document.createElement('a');
           item.className = 'product-item reveal';
+          item.href = './products/' + p.id + '.html';
+          item.style.cssText = 'text-decoration:none;color:inherit;cursor:pointer;';
           item.innerHTML = `
             <span class="product-num">${num}</span>
             <div class="product-info">
@@ -595,11 +597,8 @@
             <div class="product-meta">
               <span class="product-price">${p.price ? `$${p.price}` : ''}</span>
               <span class="product-type-tag">${typeLabel}</span>
-              ${(p.url || p.buy_url) ? `<a href="${p.url || p.buy_url}" class="product-buy" target="_blank" rel="noopener">Buy now ↗</a>` : (p.status === 'coming_soon' ? '<span class="product-buy" style="opacity:0.4;cursor:default;">Coming soon</span>' : '')}
-              ${p.notion_url ? `<a href="${p.notion_url}" class="product-buy" target="_blank" rel="noopener">Free preview →</a>` : ''}
-              ${p.gumroad_url ? `<a href="${p.gumroad_url}" class="product-buy" target="_blank" rel="noopener">Also on Gumroad →</a>` : ''}
+              ${(p.url || p.buy_url) ? `<span class="product-buy">Buy now ↗</span>` : (p.status === 'coming_soon' ? '<span class="product-buy" style="opacity:0.4;">Coming soon</span>' : '')}
             </div>
-            ${p.image_url ? `<div style="grid-column:1/-1;margin-top:1.5rem;height:220px;overflow:hidden;"><img src="${p.image_url}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/></div>` : ''}
           `;
           list.appendChild(item);
         });
