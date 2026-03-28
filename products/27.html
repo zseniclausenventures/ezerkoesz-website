@@ -18,17 +18,23 @@
     main { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 8rem; }
     .eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.5rem; }
     h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.2rem; }
-    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 3rem; border-bottom: 0.5px solid var(--border); padding-bottom: 3rem; }
-    .description { font-size: 1.1rem; font-weight: 300; line-height: 1.8; margin-bottom: 3rem; }
-    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 2rem; }
+    .pain { font-size: 1.05rem; font-weight: 300; line-height: 1.8; padding: 1.5rem 2rem; border-left: 2px solid var(--ink); margin-bottom: 2rem; color: var(--muted); background: rgba(13,13,13,0.03); }
+    .hook { font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 0.5px solid var(--border); }
+    .description { font-size: 1.05rem; font-weight: 300; line-height: 1.8; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.3rem; font-weight: 300; margin-bottom: 1rem; margin-top: 2.5rem; letter-spacing: 0.02em; }
+    ul { list-style: none; margin-bottom: 2.5rem; }
+    ul li { font-size: 1rem; font-weight: 300; line-height: 1.7; padding: 0.4rem 0; border-bottom: 0.5px solid var(--border); padding-left: 1rem; position: relative; }
+    ul li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
     .meta-item label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.4rem; }
     .meta-item span { font-size: 1.1rem; font-weight: 300; }
     .price { font-size: 2.2rem; font-weight: 300; }
-    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.9rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.95rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; cursor: pointer; }
     .btn:hover { background: var(--ink); color: var(--paper); }
     .btn-disabled { opacity: 0.35; cursor: default; border-color: var(--muted); }
     .btn-disabled:hover { background: transparent; color: var(--ink); }
-    .soon-note { margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
+    .soon-note { margin-top: 1rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
     footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: var(--muted); border-top: 0.5px solid var(--border); letter-spacing: 0.06em; }
     footer a { color: inherit; }
     @media (max-width: 600px) {
@@ -47,15 +53,20 @@
     <div class="eyebrow">Spreadsheet &nbsp;/&nbsp; Digital product</div>
     <h1>PricingGap Calculator</h1>
     <p class="tagline">Find your optimal SaaS price point in minutes.</p>
+    <p class="pain">Most SaaS founders set prices based on gut feeling — and leave significant revenue on the table by under-charging or lose customers by over-charging.</p>
+    <p class="hook">Find your optimal price point using benchmarking data from 6 proven SaaS pricing models.</p>
     <p class="description">A dynamic SaaS pricing benchmarking spreadsheet with pre-built formulas to visualize competitor gaps and calculate optimal price points.</p>
+    <h2>Who this is for</h2>
+    <ul><li>SaaS founders setting or revisiting pricing</li><li>Product managers optimising revenue per user</li><li>Growth teams running pricing experiments</li><li>Bootstrapped founders maximising MRR</li></ul>
+    <h2>What's included</h2>
+    <ul><li>6 SaaS pricing model benchmarks with formulas</li><li>Competitor gap visualisation with pre-built charts</li><li>LTV/CAC ratio calculator by pricing tier</li><li>Scenario modelling for price change impact on MRR</li></ul>
     <div class="meta-grid">
       <div class="meta-item"><label>Price</label><span class="price">$19</span></div>
       <div class="meta-item"><label>Format</label><span>Spreadsheet</span></div>
       <div class="meta-item"><label>Delivery</label><span>Instant download</span></div>
       <div class="meta-item"><label>Availability</label><span>Launching soon</span></div>
     </div>
-    <span class="btn btn-disabled">Coming soon</span>
-    <p class="soon-note">This product is launching shortly. Check back soon.</p>
+    <span class="btn btn-disabled">Coming soon — $19</span><p class="soon-note">Launching shortly on Lemon Squeezy. Check back soon.</p>
   </main>
   <footer>Ezerkoesz Ventures AS &nbsp;·&nbsp; contact@ezerkoesz.com &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy</a> &nbsp;·&nbsp; <a href="/refund-policy.html">Refunds</a></footer>
 </body>

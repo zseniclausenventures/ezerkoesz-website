@@ -18,17 +18,23 @@
     main { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 8rem; }
     .eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.5rem; }
     h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.2rem; }
-    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 3rem; border-bottom: 0.5px solid var(--border); padding-bottom: 3rem; }
-    .description { font-size: 1.1rem; font-weight: 300; line-height: 1.8; margin-bottom: 3rem; }
-    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 2rem; }
+    .pain { font-size: 1.05rem; font-weight: 300; line-height: 1.8; padding: 1.5rem 2rem; border-left: 2px solid var(--ink); margin-bottom: 2rem; color: var(--muted); background: rgba(13,13,13,0.03); }
+    .hook { font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 0.5px solid var(--border); }
+    .description { font-size: 1.05rem; font-weight: 300; line-height: 1.8; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.3rem; font-weight: 300; margin-bottom: 1rem; margin-top: 2.5rem; letter-spacing: 0.02em; }
+    ul { list-style: none; margin-bottom: 2.5rem; }
+    ul li { font-size: 1rem; font-weight: 300; line-height: 1.7; padding: 0.4rem 0; border-bottom: 0.5px solid var(--border); padding-left: 1rem; position: relative; }
+    ul li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
     .meta-item label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.4rem; }
     .meta-item span { font-size: 1.1rem; font-weight: 300; }
     .price { font-size: 2.2rem; font-weight: 300; }
-    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.9rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.95rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; cursor: pointer; }
     .btn:hover { background: var(--ink); color: var(--paper); }
     .btn-disabled { opacity: 0.35; cursor: default; border-color: var(--muted); }
     .btn-disabled:hover { background: transparent; color: var(--ink); }
-    .soon-note { margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
+    .soon-note { margin-top: 1rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
     footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: var(--muted); border-top: 0.5px solid var(--border); letter-spacing: 0.06em; }
     footer a { color: inherit; }
     @media (max-width: 600px) {
@@ -47,15 +53,20 @@
     <div class="eyebrow">Spreadsheet &nbsp;/&nbsp; Digital product</div>
     <h1>ERP Cost Reality Check</h1>
     <p class="tagline">Know the true 5-year cost of your ERP before you sign.</p>
+    <p class="pain">ERP vendors quote you a licence fee — then double the cost with hidden implementation, training, and maintenance charges you never saw coming.</p>
+    <p class="hook">Know the real 5-year cost of your ERP before you sign anything.</p>
     <p class="description">A dynamic spreadsheet that automatically calculates 5-year ERP TCO by factoring in hidden maintenance fees, implementation costs, and training overhead.</p>
+    <h2>Who this is for</h2>
+    <ul><li>CFOs and finance teams evaluating ERP vendors</li><li>IT managers comparing on-premise vs cloud ERP</li><li>Operations leads calculating total cost of ownership</li><li>Consultants advising clients on ERP decisions</li></ul>
+    <h2>What's included</h2>
+    <ul><li>5-year TCO calculator with hidden cost inputs</li><li>Implementation, training and maintenance cost breakdown</li><li>On-premise vs cloud comparison model</li><li>Vendor comparison matrix with weighted scoring</li></ul>
     <div class="meta-grid">
       <div class="meta-item"><label>Price</label><span class="price">$19</span></div>
       <div class="meta-item"><label>Format</label><span>Spreadsheet</span></div>
       <div class="meta-item"><label>Delivery</label><span>Instant download</span></div>
       <div class="meta-item"><label>Availability</label><span>Launching soon</span></div>
     </div>
-    <span class="btn btn-disabled">Coming soon</span>
-    <p class="soon-note">This product is launching shortly. Check back soon.</p>
+    <span class="btn btn-disabled">Coming soon — $19</span><p class="soon-note">Launching shortly on Lemon Squeezy. Check back soon.</p>
   </main>
   <footer>Ezerkoesz Ventures AS &nbsp;·&nbsp; contact@ezerkoesz.com &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy</a> &nbsp;·&nbsp; <a href="/refund-policy.html">Refunds</a></footer>
 </body>
