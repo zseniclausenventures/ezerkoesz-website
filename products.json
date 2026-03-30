@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T21:10:13.542746+00:00",
+  "updated_at": "2026-03-30T21:11:14.245995+00:00",
   "products": [
     {
       "id": 14,
@@ -77,10 +77,11 @@
       "type": "notion_template",
       "price": 29,
       "currency": "USD",
-      "status": "coming_soon",
-      "url": "",
+      "status": "active",
+      "url": "https://www.notion.so/AI-ROI-Command-Center-3333dc94ad3b815ab9cbfde9e6cf5a85",
       "score": 8.0,
-      "built_at": "2026-03-28T16:40:00Z"
+      "built_at": "2026-03-28T16:40:00Z",
+      "updated_at": "2026-03-30T21:11:14.245968+00:00"
     }
   ]
 }
