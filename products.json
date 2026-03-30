@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T21:09:15.786688+00:00",
+  "updated_at": "2026-03-30T21:09:51.526026+00:00",
   "products": [
     {
       "id": 14,
@@ -36,10 +36,11 @@
       "type": "spreadsheet",
       "price": 19,
       "currency": "USD",
-      "status": "coming_soon",
-      "url": "",
+      "status": "active",
+      "url": "https://www.notion.so/SaaS-Pricing-Revenue-Maximizer-3333dc94ad3b8111b461c001224aac79",
       "score": 8.0,
-      "built_at": "2026-03-28T09:51:03Z"
+      "built_at": "2026-03-28T09:51:03Z",
+      "updated_at": "2026-03-30T21:09:51.525999+00:00"
     },
     {
       "id": 33,
