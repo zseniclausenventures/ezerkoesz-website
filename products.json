@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T21:11:14.245995+00:00",
+  "updated_at": "2026-03-30T21:11:47.240082+00:00",
   "products": [
     {
       "id": 14,
@@ -64,10 +64,11 @@
       "type": "notion_template",
       "price": 29,
       "currency": "USD",
-      "status": "coming_soon",
-      "url": "",
+      "status": "active",
+      "url": "https://www.notion.so/API-Migration-Command-Center-3333dc94ad3b8113844bf67bf2847b2f",
       "score": 9.0,
-      "built_at": "2026-03-28T15:42:44Z"
+      "built_at": "2026-03-28T15:42:44Z",
+      "updated_at": "2026-03-30T21:11:47.240055+00:00"
     },
     {
       "id": 45,
