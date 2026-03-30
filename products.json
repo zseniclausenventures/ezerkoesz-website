@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T16:33:53Z",
+  "updated_at": "2026-03-30T15:36:10.530874+00:00",
   "products": [
     {
       "id": 14,
@@ -9,10 +9,11 @@
       "type": "notion_template",
       "price": 19,
       "currency": "USD",
-      "status": "coming_soon",
-      "url": "",
+      "status": "active",
+      "url": "https://www.notion.so/SaaS-Discovery-Hub-3333dc94ad3b81c891b2f2867a0945a2",
       "score": 8.0,
-      "built_at": "2026-03-28T10:05:08Z"
+      "built_at": "2026-03-28T10:05:08Z",
+      "updated_at": "2026-03-30T15:36:10.530837+00:00"
     },
     {
       "id": 20,
