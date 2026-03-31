@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T06:49:58.430502+00:00",
+  "updated_at": "2026-03-31T09:39:33.379862+00:00",
   "products": [
     {
       "id": 14,
@@ -9,11 +9,12 @@
       "type": "notion_template",
       "price": 19,
       "currency": "USD",
-      "status": "active",
+      "status": "live",
       "url": "https://www.notion.so/SaaS-Customer-Discovery-Engine-3333dc94ad3b815f8b76f72d9fa49278",
       "score": 8.0,
       "built_at": "2026-03-28T10:05:08Z",
-      "updated_at": "2026-03-30T21:09:15.786576+00:00"
+      "updated_at": "2026-03-31T09:39:33.379679+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/e898b005-3246-4d2e-aa17-83bc238dc894"
     },
     {
       "id": 20,
@@ -23,10 +24,12 @@
       "type": "spreadsheet",
       "price": 19,
       "currency": "USD",
-      "status": "coming_soon",
+      "status": "live",
       "url": "",
       "score": 8.0,
-      "built_at": "2026-03-28T09:49:08Z"
+      "built_at": "2026-03-28T09:49:08Z",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/81bac2a8-4134-4723-b790-41a818a13736",
+      "updated_at": "2026-03-31T09:39:33.379841+00:00"
     },
     {
       "id": 27,
@@ -36,11 +39,12 @@
       "type": "spreadsheet",
       "price": 19,
       "currency": "USD",
-      "status": "active",
+      "status": "live",
       "url": "https://www.notion.so/SaaS-Pricing-Revenue-Maximizer-3333dc94ad3b8111b461c001224aac79",
       "score": 8.0,
       "built_at": "2026-03-28T09:51:03Z",
-      "updated_at": "2026-03-30T21:09:51.525999+00:00"
+      "updated_at": "2026-03-31T09:39:33.379848+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/4e4bdcbd-de58-4d83-b5e6-ea403042174d"
     },
     {
       "id": 33,
@@ -50,11 +54,12 @@
       "type": "notion_template",
       "price": 19,
       "currency": "USD",
-      "status": "active",
+      "status": "live",
       "url": "https://www.notion.so/Profit-First-Pricing-Engine-3343dc94ad3b81e8ad21f76756b495d2",
       "score": 8.0,
       "built_at": "2026-03-28T10:02:12Z",
-      "updated_at": "2026-03-31T06:49:00.162072+00:00"
+      "updated_at": "2026-03-31T09:39:33.379852+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/c5e17500-059a-42f9-95bc-9474c60207d4"
     },
     {
       "id": 46,
@@ -64,11 +69,12 @@
       "type": "notion_template",
       "price": 29,
       "currency": "USD",
-      "status": "active",
+      "status": "live",
       "url": "https://www.notion.so/API-Migration-Command-Center-3333dc94ad3b8113844bf67bf2847b2f",
       "score": 9.0,
       "built_at": "2026-03-28T15:42:44Z",
-      "updated_at": "2026-03-30T21:11:47.240055+00:00"
+      "updated_at": "2026-03-31T09:39:33.379856+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/31e79412-ef68-406c-8103-fddb246f2b05"
     },
     {
       "id": 45,
@@ -78,11 +84,12 @@
       "type": "notion_template",
       "price": 29,
       "currency": "USD",
-      "status": "active",
+      "status": "live",
       "url": "https://www.notion.so/AI-ROI-Command-Center-3343dc94ad3b81fca9b3cfd28813922c",
       "score": 8.0,
       "built_at": "2026-03-28T16:40:00Z",
-      "updated_at": "2026-03-31T06:49:58.430468+00:00"
+      "updated_at": "2026-03-31T09:39:33.379859+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/33600b7b-4db8-4f83-b826-5ee616039972"
     }
   ]
 }
