@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T09:39:33.379862+00:00",
+  "updated_at": "2026-04-03T19:00:00+00:00",
   "products": [
     {
       "id": 14,
@@ -90,6 +90,20 @@
       "built_at": "2026-03-28T16:40:00Z",
       "updated_at": "2026-03-31T09:39:33.379859+00:00",
       "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/33600b7b-4db8-4f83-b826-5ee616039972"
+    },
+    {
+      "id": 43,
+      "name": "AI Skills Vault",
+      "tagline": "Deploy battle-tested AI skills in minutes, not days.",
+      "description": "A plug-and-play Notion template with 50+ pre-built AI skill templates, categorized workflows, ROI tracking, and deployment checklists.",
+      "type": "notion_template",
+      "price": 29,
+      "currency": "USD",
+      "status": "live",
+      "url": "",
+      "score": 8.0,
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/0e7569dc-63d8-4d1b-9923-fd1b7b37ab35",
+      "updated_at": "2026-04-03T19:00:00+00:00"
     }
   ]
 }
