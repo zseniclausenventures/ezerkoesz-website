@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T19:00:00+00:00",
+  "updated_at": "2026-04-04T06:32:00.092513+00:00",
   "products": [
     {
       "id": 14,
@@ -7,14 +7,15 @@
       "tagline": "Uncover SaaS customer pain points instantly.",
       "description": "A comprehensive Notion template with interview scripts, persona builders, and pain-point analysis matrices tailored for SaaS discovery.",
       "type": "notion_template",
-      "price": 19,
+      "price": 19.0,
       "currency": "USD",
       "status": "live",
       "url": "https://www.notion.so/SaaS-Customer-Discovery-Engine-3333dc94ad3b815f8b76f72d9fa49278",
       "score": 8.0,
       "built_at": "2026-03-28T10:05:08Z",
-      "updated_at": "2026-03-31T09:39:33.379679+00:00",
-      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/e898b005-3246-4d2e-aa17-83bc238dc894"
+      "updated_at": "2026-04-03T19:35:03.938746+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/e898b005-3246-4d2e-aa17-83bc238dc894",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/b32d4f91-e2e8-4d80-a58f-76db9009fe63"
     },
     {
       "id": 20,
@@ -22,14 +23,15 @@
       "tagline": "Know the true 5-year cost of your ERP before you sign.",
       "description": "A dynamic spreadsheet that automatically calculates 5-year ERP TCO by factoring in hidden maintenance fees, implementation costs, and training overhead.",
       "type": "spreadsheet",
-      "price": 19,
+      "price": 19.0,
       "currency": "USD",
       "status": "live",
       "url": "",
       "score": 8.0,
       "built_at": "2026-03-28T09:49:08Z",
       "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/81bac2a8-4134-4723-b790-41a818a13736",
-      "updated_at": "2026-03-31T09:39:33.379841+00:00"
+      "updated_at": "2026-04-03T19:35:01.990572+00:00",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/e7341f4a-836a-4779-a4ee-442e28833d58"
     },
     {
       "id": 27,
@@ -37,14 +39,15 @@
       "tagline": "Find your optimal SaaS price point in minutes.",
       "description": "A dynamic SaaS pricing benchmarking spreadsheet with pre-built formulas to visualize competitor gaps and calculate optimal price points.",
       "type": "spreadsheet",
-      "price": 19,
+      "price": 19.0,
       "currency": "USD",
       "status": "live",
       "url": "https://www.notion.so/SaaS-Pricing-Revenue-Maximizer-3333dc94ad3b8111b461c001224aac79",
       "score": 8.0,
       "built_at": "2026-03-28T09:51:03Z",
-      "updated_at": "2026-03-31T09:39:33.379848+00:00",
-      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/4e4bdcbd-de58-4d83-b5e6-ea403042174d"
+      "updated_at": "2026-04-03T19:34:58.763087+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/4e4bdcbd-de58-4d83-b5e6-ea403042174d",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/5f02390b-3850-46ed-a24f-0f515f7974d5"
     },
     {
       "id": 33,
@@ -52,14 +55,15 @@
       "tagline": "Build service packages that are profitable from day one.",
       "description": "A dynamic Notion template that automates Profit First calculations to generate tiered service packages instantly.",
       "type": "notion_template",
-      "price": 19,
+      "price": 19.0,
       "currency": "USD",
       "status": "live",
       "url": "https://www.notion.so/Profit-First-Pricing-Engine-3343dc94ad3b81e8ad21f76756b495d2",
       "score": 8.0,
       "built_at": "2026-03-28T10:02:12Z",
-      "updated_at": "2026-03-31T09:39:33.379852+00:00",
-      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/c5e17500-059a-42f9-95bc-9474c60207d4"
+      "updated_at": "2026-04-03T19:35:27.445316+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/c5e17500-059a-42f9-95bc-9474c60207d4",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/423dcbf9-5d91-4f77-9d85-4cfe04630319"
     },
     {
       "id": 46,
@@ -67,14 +71,15 @@
       "tagline": "Migrate broken API integrations without starting from scratch.",
       "description": "A migration toolkit with code examples, updated integration templates, and step-by-step workflows for Notion API 2026 breaking changes.",
       "type": "notion_template",
-      "price": 29,
+      "price": 29.0,
       "currency": "USD",
       "status": "live",
       "url": "https://www.notion.so/API-Migration-Command-Center-3333dc94ad3b8113844bf67bf2847b2f",
       "score": 9.0,
       "built_at": "2026-03-28T15:42:44Z",
-      "updated_at": "2026-03-31T09:39:33.379856+00:00",
-      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/31e79412-ef68-406c-8103-fddb246f2b05"
+      "updated_at": "2026-04-03T19:36:25.205308+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/31e79412-ef68-406c-8103-fddb246f2b05",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/f070dc40-0698-4f19-bd86-b26658c66662"
     },
     {
       "id": 45,
@@ -82,14 +87,15 @@
       "tagline": "Turn enterprise AI analytics into actionable optimization strategies.",
       "description": "A Notion template with KPI tracking, ROI measurement frameworks, and improvement playbooks for enterprise AI teams who have data but no clear path to better results.",
       "type": "notion_template",
-      "price": 29,
+      "price": 29.0,
       "currency": "USD",
       "status": "live",
       "url": "https://www.notion.so/AI-ROI-Command-Center-3343dc94ad3b81fca9b3cfd28813922c",
       "score": 8.0,
       "built_at": "2026-03-28T16:40:00Z",
-      "updated_at": "2026-03-31T09:39:33.379859+00:00",
-      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/33600b7b-4db8-4f83-b826-5ee616039972"
+      "updated_at": "2026-04-03T19:36:00.509099+00:00",
+      "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/33600b7b-4db8-4f83-b826-5ee616039972",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/48592ee2-1224-49dd-ac2c-125639f30821"
     },
     {
       "id": 43,
@@ -97,13 +103,29 @@
       "tagline": "Deploy battle-tested AI skills in minutes, not days.",
       "description": "A plug-and-play Notion template with 50+ pre-built AI skill templates, categorized workflows, ROI tracking, and deployment checklists.",
       "type": "notion_template",
-      "price": 29,
+      "price": 29.0,
       "currency": "USD",
       "status": "live",
       "url": "",
       "score": 8.0,
       "buy_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/0e7569dc-63d8-4d1b-9923-fd1b7b37ab35",
-      "updated_at": "2026-04-03T19:00:00+00:00"
+      "updated_at": "2026-04-03T19:36:01.939155+00:00",
+      "lead_magnet_url": "https://ezerkoesz.lemonsqueezy.com/checkout/buy/735e37d6-dbed-480c-97f4-8e9800335e71"
+    },
+    {
+      "id": 91,
+      "name": "SaaS Profit Blueprint",
+      "tagline": "Forecast your SaaS future with Forecastr's monthly financial model.",
+      "description": "# SaaS Profit Blueprint: Financial Model Template for SaaS Founders\n\n## What Problem Does This Solve?\nMost SaaS founders waste weeks building financial models from scratch—only to end up with spreadsheets that break when assumptions change.\n\n## Who Is This For?\nEarly-stage and growth-stage SaaS founders, CFOs, and operators who need investor-ready financials without hiring a finance team.\n\n## What Do You Get?\n- Pre-built Google Sheets and Excel financial model template\n- Automated pricing scenario analysis (toggle between plans instantly)\n- Unit economics dashboard: LTV, CAC, payback period, churn impact\n- MRR/ARR growth projections with cohort logic built in\n- Fundraising-ready outputs formatted for investor review\n\n## What Happens After You Use It?\nYou walk into investor meetings with clear, defensible numbers. You spot unprofitable pricing tiers before they hurt growth. You make faster hiring and spending decisions because the model updates automatically.\n\n## Why Not Build It Yourself?\nBuilding a reliable SaaS financial model typically takes 40+ hours and requires deep spreadsheet and finance expertise. Most self-built models don't account for churn curves, expansion revenue, or multi-tier pricing complexity. This template handles all of it on day one.\n\n**Accurate SaaS financials shouldn't require a finance degree.**",
+      "type": "spreadsheet",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-04T06:32:00.092497+00:00",
+      "updated_at": "2026-04-04T06:32:00.092509+00:00",
+      "buy_url": ""
     }
   ]
 }
