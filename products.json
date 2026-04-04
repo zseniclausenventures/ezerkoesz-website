@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T06:32:00.092513+00:00",
+  "updated_at": "2026-04-04T07:28:00.160958+00:00",
   "products": [
     {
       "id": 14,
@@ -125,6 +125,21 @@
       "score": 9.0,
       "built_at": "2026-04-04T06:32:00.092497+00:00",
       "updated_at": "2026-04-04T06:32:00.092509+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 48,
+      "name": "ApprovalFlow AI Kit",
+      "tagline": "**\"From submission to signed-off in minutes — not days.\"**",
+      "description": "# ApprovalFlow AI Kit\n\n**What problem does this solve?**\nMost businesses waste hours chasing payment approvals and compliance sign-offs through email threads, spreadsheets, and Slack messages. Nothing is tracked. Things fall through.\n\n**Who is this for?**\nFinance managers, ops leads, and small business owners who use Airtable and want structured approval workflows without hiring a developer.\n\n**What do you get?**\nA set of ready-built Airtable templates with pre-configured AI automation for:\n- Payment approval routing\n- Compliance review workflows\n- Multi-step sign-off tracking\n- Audit trails and status notifications\n\nEverything is documented and ready to connect to your existing tools.\n\n**What happens after you use it?**\nApprovals move faster. Nothing gets lost. Your team knows exactly where each request stands, and you have a clean record for compliance purposes.\n\n**Why not build it yourself?**\nYou can. But mapping logic, setting up automation, testing edge cases, and writing documentation takes 20–40 hours. This kit is already tested across common business scenarios. You customize, not construct.\n\n---\n\nApprovalFlow AI Kit is a practical starting point, not a magic solution. It works best for teams who already know Airtable and want to stop reinventing the same workflows.",
+      "type": "spreadsheet",
+      "price": 29.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-04-04T07:28:00.160943+00:00",
+      "updated_at": "2026-04-04T07:28:00.160954+00:00",
       "buy_url": ""
     }
   ]
