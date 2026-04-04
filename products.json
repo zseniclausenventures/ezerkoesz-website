@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T07:28:00.160958+00:00",
+  "updated_at": "2026-04-04T07:31:40.141248+00:00",
   "products": [
     {
       "id": 14,
@@ -140,6 +140,21 @@
       "score": 8.0,
       "built_at": "2026-04-04T07:28:00.160943+00:00",
       "updated_at": "2026-04-04T07:28:00.160954+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 52,
+      "name": "Obsidian CLI Autopilot",
+      "tagline": "Stop Googling the same terminal commands — copy, paste, and automate your Obsidian workflows in seconds.",
+      "description": "# Obsidian CLI Autopilot\n\n**What problem does this solve?**\nAutomating Obsidian tasks through the command line requires scripting knowledge most users simply don't have. Writing backup scripts, batch imports, and vault cleanup tools from scratch takes hours — and they break.\n\n**Who is this for?**\nObsidian users who want automation without learning Bash or Python. You know CLI exists, but you'd rather use your time thinking, not debugging scripts.\n\n**What do you get?**\nA ready-to-use library of CLI scripts covering the most common Obsidian workflows:\n- Automated vault backups with timestamps\n- Batch import from Notion, Roam, or plain folders\n- Vault cleanup and folder reorganization\n- Daily note generation and archiving\n\nEvery script is copy-paste ready with clear comments explaining each line.\n\n**What happens after you use it?**\nYour vault maintains itself. Backups run on schedule, imports take seconds, and organization happens without manual effort.\n\n**Why not build it yourself?**\nYou could. But edge cases accumulate fast — file conflicts, encoding issues, path errors. These scripts have already hit those walls. They're tested, documented, and opinionated enough to work without configuration headaches.\n\nLess setup. More writing.",
+      "type": "checklist",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-04-04T07:31:40.141235+00:00",
+      "updated_at": "2026-04-04T07:31:40.141245+00:00",
       "buy_url": ""
     }
   ]
