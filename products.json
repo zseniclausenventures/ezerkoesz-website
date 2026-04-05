@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T07:31:40.141248+00:00",
+  "updated_at": "2026-04-05T06:32:21.874139+00:00",
   "products": [
     {
       "id": 14,
@@ -155,6 +155,21 @@
       "score": 8.0,
       "built_at": "2026-04-04T07:31:40.141235+00:00",
       "updated_at": "2026-04-04T07:31:40.141245+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 54,
+      "name": "Bookmark Chaos Tamer",
+      "tagline": "Manual setup required for categorization and tagging.",
+      "description": "# Bookmark Chaos Tamer\n\n**What problem does this solve?**\nSaving bookmarks is easy. Finding them later is not. Most systems require you to manually tag, categorize, and organize every link — which nobody actually does consistently.\n\n**Who is this for?**\nKnowledge workers, researchers, and Obsidian users who collect links but lose them in the noise.\n\n**What do you get?**\nA complete bookmark management system for Obsidian with pre-built automatic tagging rules, ready-made categories, and a structured review workflow. Drop a link in, and the system handles the sorting.\n\n**What happens after you use it?**\nYour saved links become findable. You stop re-Googling things you already read. Your reading list actually gets processed instead of abandoned.\n\n**Why not build it yourself?**\nYou can. It takes 6–10 hours to design a tagging taxonomy, test category logic, and build a review workflow that doesn't collapse after two weeks. This is already built, tested, and ready to use in under 30 minutes.\n\n---\n\nBookmark Chaos Tamer is not a plugin. It is a vault system — templates, folders, and workflows — that works with what Obsidian already does, without extra dependencies.",
+      "type": "obsidian_vault",
+      "price": 49.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 8.0,
+      "built_at": "2026-04-05T06:32:21.874107+00:00",
+      "updated_at": "2026-04-05T06:32:21.874134+00:00",
       "buy_url": ""
     }
   ]
