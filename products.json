@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T06:32:21.874139+00:00",
+  "updated_at": "2026-04-06T06:31:58.891191+00:00",
   "products": [
     {
       "id": 14,
@@ -170,6 +170,21 @@
       "score": 8.0,
       "built_at": "2026-04-05T06:32:21.874107+00:00",
       "updated_at": "2026-04-05T06:32:21.874134+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 103,
+      "name": "Agent Deploy Rehearsal Kit",
+      "tagline": "Test AI field agents before live deployment.",
+      "description": "# Agent Deploy Rehearsal Kit\n\n**What problem does this solve?**\nMost teams deploy AI field agents directly into live environments with no structured pre-flight check. Errors surface too late, in front of real users.\n\n**Who is this for?**\nOperations leads and AI implementers who manage field agents across multiple bases and need a repeatable testing process before going live.\n\n**What do you get?**\nA ready-to-use Excel and Google Sheets template that maps agent logic, edge cases, trigger conditions, and expected outputs in one structured workspace. Includes a scenario library and a pass/fail tracking layer.\n\n**What happens after you use it?**\nYou deploy with documented evidence that your agent has been tested against real-world conditions. Fewer rollbacks. Faster sign-off from stakeholders. A reusable framework for every future deployment.\n\n**Why not build this yourself?**\nYou could. But building a reliable testing structure from scratch takes time you rarely have before a deployment deadline. This gives you a proven starting point, not a blank spreadsheet.\n\n---\n\nThe kit does one thing: it gives AI deployment a standardized rehearsal stage that currently doesn't exist in most workflows.\n\nNo code required. Works with any agent platform.",
+      "type": "spreadsheet",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-06T06:31:58.891162+00:00",
+      "updated_at": "2026-04-06T06:31:58.891186+00:00",
       "buy_url": ""
     }
   ]

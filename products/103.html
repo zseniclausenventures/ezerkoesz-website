@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Deploy Rehearsal Kit — Ezerkoesz</title>
+  <meta name="description" content="# Agent Deploy Rehearsal Kit
+
+**What problem does this solve?**
+Most teams deploy AI field agents directly into live environments with no structured pre-flight ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #0d0d0d; --paper: #f0ede6; --muted: #6b6860; --border: rgba(13,13,13,0.12); }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Cormorant", Georgia, serif; background: var(--paper); color: var(--ink); min-height: 100vh; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 2rem 4rem; border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-size: 1rem; font-weight: 400; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); }
+    .nav-back { font-size: 0.85rem; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; }
+    .nav-back:hover { color: var(--ink); }
+    main { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 8rem; }
+    .eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.5rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.2rem; }
+    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 0.5px solid var(--border); }
+    h2 { font-size: 1.3rem; font-weight: 300; margin: 2.5rem 0 1rem; letter-spacing: 0.02em; }
+    p { font-size: 1.05rem; font-weight: 300; line-height: 1.8; margin-bottom: 1rem; }
+    .subhead { font-weight: 400; margin-top: 1.5rem; }
+    ul { list-style: none; margin-bottom: 2rem; }
+    ul li { font-size: 1rem; font-weight: 300; line-height: 1.7; padding: 0.4rem 0 0.4rem 1rem; border-bottom: 0.5px solid var(--border); position: relative; }
+    ul li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+    .meta-item label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.4rem; }
+    .meta-item span { font-size: 1.1rem; font-weight: 300; }
+    .price { font-size: 2.2rem; font-weight: 300; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.95rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; cursor: pointer; }
+    .btn:hover { background: var(--ink); color: var(--paper); }
+    .btn-disabled { opacity: 0.35; cursor: default; border-color: var(--muted); }
+    .btn-disabled:hover { background: transparent; color: var(--ink); }
+    .soon-note { font-size: 0.9rem; color: var(--muted); font-style: italic; }
+    footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: var(--muted); border-top: 0.5px solid var(--border); letter-spacing: 0.06em; }
+    footer a { color: inherit; }
+    @media (max-width: 600px) { nav { padding: 1.5rem; } main { padding: 3rem 1.5rem 6rem; } .meta-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">Ezerkoesz</a>
+    <a href="/#products-section" class="nav-back">← All products</a>
+  </nav>
+  <main>
+    <div class="eyebrow">Spreadsheet &nbsp;/&nbsp; Digital product</div>
+    <h1>Agent Deploy Rehearsal Kit</h1>
+    <p class="tagline">Test AI field agents before live deployment.</p>
+    <p>> Test your AI agent logic in a spreadsheet before it fails in the field.</p>
+<p>---</p>
+<h2>What Is This?</h2>
+<p>Deploying AI agents to live field operations without proper testing is like sending a soldier into the field without a briefing. Things break. Decisions fail. Trust erodes.</p>
+<p>The AI Field Agent Pre-Deployment Testing Toolkit is a structured spreadsheet system that gives you a standardized way to define, test, score, and validate your AI agents before they ever touch a live environment.</p>
+<p>No code required. No special infrastructure. Just a spreadsheet that forces you to think clearly about what your agents should do — and proves whether they actually do it.</p>
+<p>---</p>
+<h2>The Problem This Solves</h2>
+<p>Right now, most teams deploying AI field agents face the same gap:</p>
+<ul>
+<li>❌ No standard format for documenting agent behavior expectations</li>
+<li>❌ No repeatable way to run pre-deployment scenario tests</li>
+<li>❌ No scoring system to compare agent versions objectively</li>
+<li>❌ No audit trail when something goes wrong in the field</li>
+<li>❌ Test results scattered across Slack threads, docs, and memory</li>
+</ul>
+<p>This toolkit gives you one place where agent logic is defined, tested, scored, and logged — before deployment day.</p>
+<p>---</p>
+<h2>What's Included</h2>
+<p>The toolkit is organized across four sheets:</p>
+<p>| Sheet | What It Does |</p>
+<p>|---|---|</p>
+<p>| `START HERE` | Setup instructions and a quick-start guide to get your first test running in minutes |</p>
+<p>| `Agent Registry` | Define all your agents, their roles, trigger conditions, and behavioral rules |</p>
+<p>| `Scenario Builder` | Build test scenarios with structured inputs and expected outputs |</p>
+<p>| `Test Results Log` | Log actual vs. expected outcomes per scenario, per agent, per run |</p>
+<p>Each sheet is pre-formatted with headers, dropdowns, and instructions built directly into the cells. Fill in your details and start testing immediately.</p>
+<p>---</p>
+<h2>Get Started in 3 Minutes</h2>
+<p class="subhead">Step 1 — Open `START HERE`</p>
+<p>Read the two-minute setup overview. Customize the three highlighted fields with your project name, team, and deployment date.</p>
+<p class="subhead">Step 2 — Register your agents in `Agent Registry`</p>
+<p>Add one row per agent. Define its role, the conditions that trigger it, and any behavioral constraints or rules it should follow.</p>
+<p class="subhead">Step 3 — Build your first scenario in `Scenario Builder`</p>
+<p>Describe a realistic field situation. Define what input the agent receives and what the correct output or decision should look like. Run the agent against that scenario and log the result in `Test Results Log`.</p>
+<p>That's it. You now have your first validated test case on record.</p>
+<p>---</p>
+<h2>Who This Is For</h2>
+<ul>
+<li>Teams building AI agents for field operations, logistics, or automated decision-making</li>
+<li>Project managers who need to sign off on agent readiness without reading code</li>
+<li>QA leads running structured validation before go-live</li>
+<li>Anyone who has ever had an AI agent do something unexpected in production</li>
+</ul>
+<p>---</p>
+<h2>FAQ</h2>
+<p class="subhead">Do I need to know how to code?</p>
+<p>No. The toolkit is entirely spreadsheet-based. If you can fill in a table, you can use this.</p>
+<p class="subhead">Can I use this with any AI agent framework?</p>
+<p>Yes. The toolkit is framework-agnostic. It documents behavior and test logic, not implementation. It works whether your agents run on custom code, LangChain, AutoGPT, or any other system.</p>
+<p class="subhead">What counts as a "passing" test?</p>
+<p>You define that. The `Test Results Log` includes a scoring</p>
+
+    <div class="meta-grid">
+      <div class="meta-item"><label>Price</label><span class="price">$19</span></div>
+      <div class="meta-item"><label>Format</label><span>Spreadsheet</span></div>
+      <div class="meta-item"><label>Delivery</label><span>Instant download</span></div>
+      <div class="meta-item"><label>Availability</label><span>Launching soon</span></div>
+    </div>
+    <span class="btn btn-disabled">Coming soon — $19</span>
+    <p class="soon-note">Launching shortly. Check back soon.</p>
+  </main>
+  <footer>Ezerkoesz Ventures AS &nbsp;·&nbsp; contact@ezerkoesz.com &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy</a> &nbsp;·&nbsp; <a href="/refund-policy.html">Refunds</a></footer>
+</body>
+</html>
