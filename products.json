@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T06:31:58.891191+00:00",
+  "updated_at": "2026-04-07T06:33:15.718843+00:00",
   "products": [
     {
       "id": 14,
@@ -185,6 +185,21 @@
       "score": 9.0,
       "built_at": "2026-04-06T06:31:58.891162+00:00",
       "updated_at": "2026-04-06T06:31:58.891186+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 84,
+      "name": "Profit Margin Autopilot",
+      "tagline": "Stop underpricing your work: calculate true profit per product, per platform, per month — in seconds.",
+      "description": "# Profit Margin Autopilot – Pricing Calculator for Handmade Sellers\n\n**What problem does this solve?**\nMost handmade sellers underprice because they forget to include platform fees, packaging, or their own time. This Notion template does the math automatically so nothing gets missed.\n\n**Who is this for?**\nEtsy sellers, craft business owners, and independent makers who want to price products confidently without building spreadsheets from scratch.\n\n**What do you get?**\nA ready-to-use Notion template with automated calculators for:\n- Cost of goods sold (COGS)\n- Etsy and platform fees\n- Shipping costs\n- Your hourly labor rate\n- Monthly net profit projection across your product catalog\n\n**What happens after you use it?**\nYou stop guessing. Every product has a clear floor price, a healthy margin target, and a projected monthly profit based on realistic sales volume.\n\n**Why not build it yourself?**\nYou could spend a weekend building this in Notion or Excel. Or you duplicate this template in two minutes and start pricing correctly today. The formulas are already tested, the structure is already logical, and nothing needs fixing.\n\nWorks with any handmade product category. No spreadsheet skills required.",
+      "type": "notion_template",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-07T06:33:15.718830+00:00",
+      "updated_at": "2026-04-07T06:33:15.718839+00:00",
       "buy_url": ""
     }
   ]

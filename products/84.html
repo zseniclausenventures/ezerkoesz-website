@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit Margin Autopilot — Ezerkoesz</title>
+  <meta name="description" content="# Profit Margin Autopilot – Pricing Calculator for Handmade Sellers
+
+**What problem does this solve?**
+Most handmade sellers underprice because they forget to i">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #0d0d0d; --paper: #f0ede6; --muted: #6b6860; --border: rgba(13,13,13,0.12); }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Cormorant", Georgia, serif; background: var(--paper); color: var(--ink); min-height: 100vh; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 2rem 4rem; border-bottom: 0.5px solid var(--border); }
+    .nav-logo { font-size: 1rem; font-weight: 400; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); }
+    .nav-back { font-size: 0.85rem; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; }
+    .nav-back:hover { color: var(--ink); }
+    main { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 8rem; }
+    .eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-bottom: 1.5rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.2rem; }
+    .tagline { font-size: 1.25rem; font-weight: 300; font-style: italic; color: var(--muted); margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 0.5px solid var(--border); }
+    h2 { font-size: 1.3rem; font-weight: 300; margin: 2.5rem 0 1rem; letter-spacing: 0.02em; }
+    p { font-size: 1.05rem; font-weight: 300; line-height: 1.8; margin-bottom: 1rem; }
+    .subhead { font-weight: 400; margin-top: 1.5rem; }
+    ul { list-style: none; margin-bottom: 2rem; }
+    ul li { font-size: 1rem; font-weight: 300; line-height: 1.7; padding: 0.4rem 0 0.4rem 1rem; border-bottom: 0.5px solid var(--border); position: relative; }
+    ul li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; padding: 2rem 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+    .meta-item label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.4rem; }
+    .meta-item span { font-size: 1.1rem; font-weight: 300; }
+    .price { font-size: 2.2rem; font-weight: 300; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; border: 0.5px solid var(--ink); font-family: inherit; font-size: 0.95rem; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); background: transparent; transition: all 0.2s; margin-bottom: 1rem; cursor: pointer; }
+    .btn:hover { background: var(--ink); color: var(--paper); }
+    .btn-disabled { opacity: 0.35; cursor: default; border-color: var(--muted); }
+    .btn-disabled:hover { background: transparent; color: var(--ink); }
+    .soon-note { font-size: 0.9rem; color: var(--muted); font-style: italic; }
+    footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: var(--muted); border-top: 0.5px solid var(--border); letter-spacing: 0.06em; }
+    footer a { color: inherit; }
+    @media (max-width: 600px) { nav { padding: 1.5rem; } main { padding: 3rem 1.5rem 6rem; } .meta-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">Ezerkoesz</a>
+    <a href="/#products-section" class="nav-back">← All products</a>
+  </nav>
+  <main>
+    <div class="eyebrow">Notion Template &nbsp;/&nbsp; Digital product</div>
+    <h1>Profit Margin Autopilot</h1>
+    <p class="tagline">Stop underpricing your work: calculate true profit per product, per platform, per month — in seconds.</p>
+    <p>> Stop guessing your prices — know exactly what every product earns before you list it.</p>
+<p>A plug-and-play Notion template that calculates your true profit per product, per platform, and per month — so you never underprice your handmade work again.</p>
+<p>---</p>
+<h2>What Is This?</h2>
+<p>Handmade Profit Engine is a Notion-based pricing and profit calculator built specifically for handmade sellers. It automatically calculates your net profit after materials, labor, packaging, shipping, and platform fees — giving you complete financial clarity before you publish a single listing.</p>
+<p>---</p>
+<h2>Who Is This For?</h2>
+<p>This template was built for creators who are tired of guessing:</p>
+<p>| Persona | Description |</p>
+<p>|---|---|</p>
+<p>| 🧶 The Etsy Seller | You're listing products but never quite sure if you're actually making money after fees |</p>
+<p>| 🛍️ The Multi-Platform Maker | You sell on Etsy, Shopify, and local markets — and need to compare margins across all channels |</p>
+<p>| 🚀 The Scaling Crafter | You're turning your hobby into a business and need real numbers to grow with confidence |</p>
+<p>---</p>
+<h2>What's Included</h2>
+<p>### 📊 Product Pricing Calculator (Main Database)</p>
+<p>The core of the template. Every row is a product. Every column does the math for you.</p>
+<p>| Column | Type | What It Tracks |</p>
+<p>|---|---|---|</p>
+<p>| Product Name | Title | The name of your item |</p>
+<p>| Material Cost | Number (USD) | Raw materials per unit |</p>
+<p>| Labor Cost | Number (USD) | Your hourly rate × time spent |</p>
+<p>| Packaging Cost | Number (USD) | Boxes, tissue paper, stickers, tape |</p>
+<p>| Shipping Cost | Number (USD) | Actual postage per order |</p>
+<p>| Platform Fee % | Number (%) | Etsy 6.5%, Shopify 2%, etc. |</p>
+<p>| Sale Price | Number (USD) | Your listed selling price |</p>
+<p>| Net Profit | Formula | Auto-calculated after all deductions |</p>
+<p>| Profit Margin % | Formula | Instantly see if your pricing is healthy |</p>
+<p>### 📅 Monthly Revenue Tracker</p>
+<p>Log your sales by month and watch your income trends emerge. Know your best-selling months, plan for slow seasons, and set realistic revenue goals.</p>
+<p>### 🏷️ Platform Fee Reference Sheet</p>
+<p>A pre-filled cheat sheet with common platform fees (Etsy, Shopify, Amazon Handmade, Not on the High Street, and more) — no more Googling every time you list somewhere new.</p>
+<p>### 💡 Hourly Rate Calculator</p>
+<p>Not sure what to charge for your time? This section helps you determine a fair labor rate based on your income goals and available working hours.</p>
+<p>### 🎯 Pricing Strategy Guide</p>
+<p>A built-in reference page explaining the difference between cost-plus pricing, value-based pricing, and competitive pricing — with examples tailored to handmade sellers.</p>
+<p>---</p>
+<h2>Get Started in 3 Minutes</h2>
+<p class="subhead">Step 1 — Duplicate the Template</p>
+<p>Click the "Duplicate" button in the top-right corner of the Notion template page. It will be added directly to your Notion workspace.</p>
+<p class="subhead">Step 2 — Set Your Labor Rate</p>
+<p>Navigate to the Hourly Rate Calculator section. Enter your target monthly income and weekly working hours. Your suggested hourly rate is calculated automatically.</p>
+<p class="subhead">Step 3 — Add Your First Product</p>
+<p>Open the Product Pricing Calculator database. Click "+ New" and fill in your material cost, labor time, packaging, shipping, and your sale price. The net profit and margin calculate instantly.</p>
+<p>> ✅ That's it. You now know exactly what you earn from that product.</p>
+<p>---</p>
+<h2>FAQ</h2>
+<p class="subhead">❓ Do I need a paid Notion plan to use this?</p>
+<p>No. This template works fully on Notion's free plan. All formulas, databases, and views are compatible with free accounts.</p>
+<p>---</p>
+<p class="subhead">❓ Can I use this for multiple platforms like Etsy and Shopify at the same time?</p>
+<p>Yes. The Platform Fee % column lets you create duplicate entries for the same product at different fee rates — so you can directly compare your Etsy vs. Shopify margins side by side.</p>
+<p>---</p>
+<p class="subhead">❓ What currency does this use?</p>
+<p>The template is set up in USD by default. Because Notion uses plain number fields, you can apply it to any currency (GBP, EUR, AUD, etc.) — simply treat the numbers as your local currency.</p>
+<p>---</p>
+<p class="subhead">❓ Can I add my own product categories or custom columns?</p>
+<p>Absolutely. Notion databases are fully customizable. Add tags, categories, seasons, or any other property that fits your business without breaking any existing formulas.</p>
+<p>---</p>
+<p class="subhead">❓ Will this work if I sell both digital and physical products?</p>
+<p>Yes. For digital products, simply set Shipping Cost and Packaging Cost to 0. The remaining formula will calculate your profit margin on digital listings accurately.</p>
+<p>---</p>
+<h2>Support</h2>
+<p>Have a question, found a bug, or need help setting things up?</p>
+<p>📩 contact@ezerkoesz.com</p>
+<p>Response time is typically within 1–2 business days. Please include "Handmade Profit Engine" in your subject line.</p>
+<p>---</p>
+<h2>License</h2>
+<p>This template is for personal and commercial use by the individual purchaser. Please do not redistribute, resell, or share the original template link publicly.</p>
+<p>---</p>
+<p>*Made with ❤️ for makers who deserve to be paid what their work is worth.*</p>
+
+    <div class="meta-grid">
+      <div class="meta-item"><label>Price</label><span class="price">$19</span></div>
+      <div class="meta-item"><label>Format</label><span>Notion Template</span></div>
+      <div class="meta-item"><label>Delivery</label><span>Instant download</span></div>
+      <div class="meta-item"><label>Availability</label><span>Launching soon</span></div>
+    </div>
+    <span class="btn btn-disabled">Coming soon — $19</span>
+    <p class="soon-note">Launching shortly. Check back soon.</p>
+  </main>
+  <footer>Ezerkoesz Ventures AS &nbsp;·&nbsp; contact@ezerkoesz.com &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy</a> &nbsp;·&nbsp; <a href="/refund-policy.html">Refunds</a></footer>
+</body>
+</html>
