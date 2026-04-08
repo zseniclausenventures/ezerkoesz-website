@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-07T06:33:15.718843+00:00",
+  "updated_at": "2026-04-08T06:31:25.139555+00:00",
   "products": [
     {
       "id": 14,
@@ -200,6 +200,21 @@
       "score": 9.0,
       "built_at": "2026-04-07T06:33:15.718830+00:00",
       "updated_at": "2026-04-07T06:33:15.718839+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 117,
+      "name": "Maker Margin Maximizer",
+      "tagline": "Effortless tracking for your small business success.",
+      "description": "# Maker Margin Maximizer – Automated Pricing & Inventory System for Makers\n\n**What problem does this solve?**\nCalculating accurate product prices while tracking materials, labor, and overhead is time-consuming and error-prone. Most makers undercharge without realizing it.\n\n**Who is this for?**\nSmall business owners, crafters, and independent manufacturers selling handmade or small-batch products — especially on platforms like Etsy.\n\n**What do you get concretely?**\nA ready-to-use Google Sheets and Excel-compatible system including:\n- Automated pricing calculator (materials + labor + overhead + profit margin)\n- Material inventory tracker with low-stock alerts\n- Cost-per-unit breakdown by product\n- Wholesale and retail price suggestions\n- Simple profit/loss overview\n\n**What's the result after using it?**\nYou stop guessing your prices. Every product reflects real costs, and you know exactly what margin you're making before you list anything.\n\n**Why not build it yourself?**\nYou could spend 10+ hours building formulas, fixing errors, and testing edge cases. This is already done, tested, and structured for makers specifically — not generic accounting.\n\nWorks in English. Compatible with Google Sheets and Excel. Instant digital download. No accounting experience needed.",
+      "type": "spreadsheet",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-08T06:31:25.139532+00:00",
+      "updated_at": "2026-04-08T06:31:25.139549+00:00",
       "buy_url": ""
     }
   ]
