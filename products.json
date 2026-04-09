@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-08T06:31:25.139555+00:00",
+  "updated_at": "2026-04-09T06:31:57.865176+00:00",
   "products": [
     {
       "id": 14,
@@ -215,6 +215,21 @@
       "score": 9.0,
       "built_at": "2026-04-08T06:31:25.139532+00:00",
       "updated_at": "2026-04-08T06:31:25.139549+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 118,
+      "name": "SaaS Finance Autopilot",
+      "tagline": "*\"Enter your numbers once, instantly see your runway, payback period, and the exact month you stop burning cash.\"*",
+      "description": "# SaaS Finance Autopilot — Financial Model for Startups & SMBs\n\n**What problem does this solve?**\nMost SaaS founders waste weeks building financial models from scratch — then get the formulas wrong anyway. This spreadsheet handles the hard parts automatically.\n\n**Who is this for?**\nEarly-stage startups and small SaaS businesses that need clean financial projections without hiring a CFO or a consultant.\n\n**What do you get?**\nA ready-to-use spreadsheet with automated calculations for:\n- Customer Acquisition Cost (CAC) and Lifetime Value (LTV)\n- Monthly and annual churn rate tracking\n- Burn rate and runway projections\n- Revenue forecasting by cohort\n\nA free template is included so you can start immediately.\n\n**What happens after you use it?**\nYou get a clear picture of your unit economics, how long your runway lasts, and where growth is actually coming from. Useful for internal decisions and investor conversations.\n\n**Why not build it yourself?**\nYou can. But it takes 20–40 hours to get the logic right, and one broken formula hides for months. This is already tested and structured around how SaaS businesses actually work.\n\nBuilt for founders who need answers, not spreadsheet projects.",
+      "type": "spreadsheet",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-09T06:31:57.865157+00:00",
+      "updated_at": "2026-04-09T06:31:57.865172+00:00",
       "buy_url": ""
     }
   ]
