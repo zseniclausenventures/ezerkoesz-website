@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T06:31:57.865176+00:00",
+  "updated_at": "2026-04-10T06:38:40.194990+00:00",
   "products": [
     {
       "id": 14,
@@ -230,6 +230,21 @@
       "score": 9.0,
       "built_at": "2026-04-09T06:31:57.865157+00:00",
       "updated_at": "2026-04-09T06:31:57.865172+00:00",
+      "buy_url": ""
+    },
+    {
+      "id": 119,
+      "name": "SaaS Profit Clarity Dashboard",
+      "tagline": "Finance clarity. Master your unit economics effortlessly.",
+      "description": "# SaaS Profit Clarity Dashboard\n\n**What problem does this solve?**\nMost SaaS founders track revenue but can't quickly answer: \"Are we actually profitable per customer?\" Calculating LTV, CAC, and payback periods manually in spreadsheets wastes hours and produces inconsistent results.\n\n**Who is this for?**\nEarly-stage and growth-stage SaaS founders who need clear unit economics without hiring a financial analyst.\n\n**What do you get?**\nA Notion-based dashboard that automatically calculates:\n- Customer Lifetime Value (LTV)\n- Customer Acquisition Cost (CAC)\n- LTV:CAC ratio\n- Payback period\n- Churn impact projections\n\nJust enter your core metrics. The formulas handle everything else.\n\n**What changes after using it?**\nYou stop guessing whether your growth is sustainable. Investor conversations become easier. Pricing decisions get grounded in real numbers rather than intuition.\n\n**Why not build it yourself?**\nYou could. But structuring the logic correctly — especially churn compounding and cohort-based LTV — takes 6–10 hours minimum. This is already built, tested, and ready to use in under 15 minutes.\n\nBuilt specifically for SaaS models. Not a generic finance template repurposed from e-commerce or consulting.\n\n---\n*One-time purchase. Lifetime access. Works in Notion.*",
+      "type": "notion_template",
+      "price": 19.0,
+      "currency": "USD",
+      "status": "coming_soon",
+      "url": "",
+      "score": 9.0,
+      "built_at": "2026-04-10T06:38:40.194979+00:00",
+      "updated_at": "2026-04-10T06:38:40.194986+00:00",
       "buy_url": ""
     }
   ]
